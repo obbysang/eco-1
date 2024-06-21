@@ -1,0 +1,54 @@
+/* src/components/ContactUs.css */
+
+.contact-us {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    background-color: #f4f4f4;
+  }
+  
+  .contact-image {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .contact-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .contact-content {
+    flex: 1;
+    padding-left: 20px;
+  }
+  
+  .contact-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+  
+  .contact-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+    transition: background-color 0.3s;
+  }
+  

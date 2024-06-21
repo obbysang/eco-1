@@ -1,0 +1,85 @@
+.footer {
+  background: linear-gradient(135deg, hsl(238, 100%, 8%), #011c49); /* Gradient background */
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif; /* Modern font */
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-sections {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px; /* Increased max width for better layout */
+  padding: 20px 0;
+}
+
+.footer-sections > div {
+  flex: 1;
+  margin: 20px; /* Increased margin for better spacing */
+}
+
+.footer-sections .statement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.footer-sections .statement p {
+  margin: 10px 0;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.footer-sections h4 {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  border-bottom: 2px solid #fff; /* Underline effect */
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer-sections ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-sections li,
+.footer-sections a {
+  margin: 8px 0;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.footer-sections a:hover {
+  text-decoration: underline;
+  color: #ffcc00; /* Change color on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  font-size: 0.9em;
+  border-top: 1px solid #fff; /* Separator line */
+  padding-top: 10px;
+}
+
+.contact-info a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+  color: #ffcc00;
+  transform: scale(1.1);
+}
