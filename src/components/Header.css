@@ -1,9 +1,9 @@
 /* Header.css */
 
 .header {
-  background-color: green;
+  background-color: #2CA51F;
   color: white;
-  font-family: Arial, sans-serif;
+  font-family: poppins, Sans-serif;
   position: relative;
   z-index: 10; /* Ensures header is on top */
 }
@@ -36,6 +36,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 10; /* Ensures logo and menu toggle are on top */
 }
 
 .logo {
@@ -52,6 +55,15 @@
   font-size: 1.5em;
   font-weight: bold;
   color: white;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2em;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
 }
 
 .nav ul {
@@ -111,4 +123,72 @@
 
 .nav .call:hover {
   background-color: #ffd700; /* Slightly darker yellow for hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .logo-nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px; /* Adjust to fit below the header */
+    left: 0;
+    background-color: #2CA51F;
+    z-index: 10;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+  }
+
+  .nav ul li {
+    text-align: left;
+  }
+
+  .nav .call {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-top {
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .header-top .contact-info {
+    font-size: 0.8em;
+    gap: 5px;
+  }
+
+  .logo img {
+    max-width: 100px;
+  }
+
+  .company-name {
+    font-size: 1.2em;
+  }
+
+  .nav a {
+    padding: 8px 10px;
+  }
 }

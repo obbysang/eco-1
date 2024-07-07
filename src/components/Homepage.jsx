@@ -3,6 +3,7 @@ import React from 'react';
 import Header from './Header';
 import HeroSection from './HeroSection';
 import Aboutus from './Aboutus';
+import Reviews from './Reviews'
 import Services from './Services';
 import Testimonials from './Testimonials';
 import Footer from './Footer';
@@ -14,6 +15,7 @@ function Homepage() {
       <Header />
       <HeroSection />
       <Aboutus/>
+      <Reviews/>
       <Services />
       <Testimonials />
       <Quote/>

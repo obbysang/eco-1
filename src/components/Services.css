@@ -2,7 +2,7 @@
 
 .services {
   padding: 50px 20px;
-  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/path-to-your-background-image.jpg');
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('/path-to-your-background-image.jpg');
   background-size: cover;
   background-position: center;
   color: #f4f4f4;

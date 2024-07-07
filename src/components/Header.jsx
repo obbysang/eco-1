@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.css';
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header className="header">
       <div className="header-top">
@@ -16,7 +22,10 @@ const Header = () => {
           <img src="../../public/logo1.jpg" alt="Company Logo" />
           <span className="company-name">ECOSCRUB</span>
         </div>
-        <nav className="nav">
+        <button className="menu-toggle" onClick={toggleMenu}>
+          ☰
+        </button>
+        <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
           <ul>
             <li><a href="/">Home</a></li>
             <li className="dropdown">
